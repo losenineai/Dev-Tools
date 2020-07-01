@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    signingConfigs {
+
+        debug {
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+
+        release {
+            v1SigningEnabled true
+            v2SigningEnabled true
+
+            storeFile file("dx_demo.keystore")
+            storePassword "dingxiang"
+            keyAlias "dx_demo.keystore"
+            keyPassword "dingxiang"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.dingxiang.mobile.anti.debug1"
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        externalNativeBuild {
+            ndkBuild {
+                arguments 'NDK_APPLICATION_MK:=src/main/cpp/Application.mk', '-j4'
+                abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', "x86_64"
+            }
+        }
+
+        ndk {
+//            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', "x86_64"
+            abiFilters 'armeabi-v7a'
+        }
+    }
+    buildTypes {
+
+        debug {
+
+            debuggable true
+            jniDebuggable true
+            minifyEnabled false
+
+            signingConfig signingConfigs.release
+            externalNativeBuild{
+                ndkBuild{
+                    arguments "NDK_BUILD_CMODE:=debug"
+                }
+            }
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.release
+        }
+    }
+
+    externalNativeBuild {
+//        cmake{
+//            path "CMakeLists.txt"
+//        }
+        ndkBuild {
+            path 'src/main/cpp/Android.mk'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}

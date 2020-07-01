@@ -1,0 +1,28 @@
+#!/bin/bash
+set -ex
+
+# 脚本所在目录
+BIN_DIR=$(cd `dirname $0` && pwd)
+# 脚本lib目录
+LIB_DIR=$BIN_DIR/apk_build-lib
+
+# apk源
+apk_src=$1
+# 输入apk所在目录
+apk_dir=`dirname $apk_src`
+# 输入apk文件名，无后缀
+apk_name=`basename $apk_src .apk` 
+apktool=$LIB_DIR/apktool_2.4.1.jar
+
+#if [[ "$2" == "-r" ]]then
+  opt=$2
+#fi
+
+if [ -f $apk_src ];then
+
+	echo "apk path: $apk_src"
+
+	# 反编译apk -r 表示不反编译xml，res等资源
+	java -jar $apktool d -f $opt $apk_src -o $apk_dir/$apk_name
+
+fi

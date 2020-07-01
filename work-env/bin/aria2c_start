@@ -1,0 +1,1 @@
+aria2c --conf-path="/Users/white/Git/BaiduExporter-0.8.5/aria2c/aria2.conf" -D

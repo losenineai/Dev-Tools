@@ -1,0 +1,7 @@
+#!/bin/bash
+# set -ex
+
+CUR_PATH=`pwd`
+echo CUR_PATH:$CUR_PATH\
+
+grep -REn "$1" . -R --color=auto

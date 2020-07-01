@@ -1,0 +1,4 @@
+#!/bin/bash
+set -ex
+
+ssh dx@123.207.6.55 -p 6000

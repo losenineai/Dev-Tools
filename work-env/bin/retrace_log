@@ -1,0 +1,28 @@
+#!/bin/sh
+
+#usage: ./retrace.sh mapping_file stacktrace_file
+#notice: 配置ANDROID_HOME。
+
+curDir=$PWD
+
+cd $ANDROID_HOME
+cd tools/proguard/bin
+
+if [ -f ${2} ]
+then
+sed -E 's/.*(at com.*)/\1/g' ${2} > at_source.txt
+else
+sed -E 's/.*(at com.*)/\1/g' $curDir/${2} > at_source.txt
+fi
+
+if [ -f ${1} ]
+then
+./retrace.sh -verbose ${1} at_source.txt > at_dest.txt
+cat at_dest.txt
+else
+./retrace.sh -verbose $curDir/${1} at_source.txt > at_dest.txt
+cat at_dest.txt
+fi
+
+rm at_source.txt
+rm at_dest.txt

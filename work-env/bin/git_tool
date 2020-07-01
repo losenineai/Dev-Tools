@@ -1,0 +1,39 @@
+#!/bin/sh
+
+if [ $1 == "tag" ]; then
+
+    # tag rename
+    if [ $2 == "-m" ]; then
+        git checkout $3
+        git tag -d $3
+        git push origin :refs/tags/$3
+        git tag $4
+        git push origin refs/tags/$4
+    # tag delete
+    elif [ $2 == "-d" ]; then
+        git tag -d $3
+        git push origin :refs/tags/$3
+    # tag replace
+    elif [ $2 == "-r" ]; then
+        git checkout $3
+        git tag  $4
+        git push origin refs/tags/$4
+    # tag add
+    elif [ $2 == "-add" ]; then
+        git tag $3
+        git push origin refs/tags/$3
+    # tag update
+    elif [ $2 == "-up" ]; then
+        git tag -l | xargs git tag -d
+        git fetch -t -p -f
+    fi
+
+elif [ $1 == "branch" ]; then
+
+    # branch rename
+    if [ $2 == "-m" ]; then
+        git branch -m $3 $4
+        git push origin :$3
+        git push origin $4
+    fi
+fi   

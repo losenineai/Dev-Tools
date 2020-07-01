@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">xxLib</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="share">分享</string>
+    <string name="announce">还在抓狂使用各种修改器改来改去吗，还在纠结于各种辅助使用教程吗？叉叉助手卧薪尝胆、呕心沥血终于可以出来活动了，想必大家等叉叉出关已经很不耐烦了，请相信叉叉未来会带给大家更多的乐趣，这只是个开始！</string>
+
+
+    <!-- 多开 -->
+    <string name="view_more_multi_launch_fail">多开失败</string>
+    <string name="view_more_multi_launch_notification">多开成功，请点击安装</string>
+    <string name="view_more_multi_launch_success">多开成功</string>
+</resources>

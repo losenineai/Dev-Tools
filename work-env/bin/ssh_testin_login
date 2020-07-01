@@ -1,0 +1,4 @@
+#!/bin/bash
+set -ex
+
+ssh dx@192.168.31.52

@@ -1,0 +1,30 @@
+#!/bin/sh
+# merge android .a into one
+
+AR=~/Work/Android/android-ndk-r15c/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/aarch64-linux-android/bin/ar 
+OUT=./merge.a
+
+rm -fr tmp
+mkdir -p tmp
+cd tmp
+
+first=false
+
+for i in $*               #在$*中遍历参数，此时每个参数都是独立的，会遍历$#次
+do
+	if [ $first == "false" ];then
+		first=true
+		OUT=$1
+		echo output: $OUT
+		continue
+	fi
+
+	echo extract a file: $i
+	$AR -x $i
+
+done
+
+cd ..
+$AR -cur $OUT ./tmp/*.o
+
+rm -fr tmp

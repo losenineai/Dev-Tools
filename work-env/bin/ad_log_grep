@@ -1,0 +1,14 @@
+#!/bin/sh
+
+PARAM=$1
+
+adb logcat -c
+
+if [ -z $PARAM ];then
+	python ~/bin/ad_log_grep-lib/colored-adb-logcat.py
+elif [[ $PARAM == "-e" ]]; then
+	adb logcat -v time *:E | grep -E --color=auto "Fatal|signal|E/|F/|/I/DEBUG"
+else
+	adb logcat -v time | grep -E --color=auto "$PARAM"
+fi
+

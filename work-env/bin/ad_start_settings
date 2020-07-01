@@ -1,0 +1,4 @@
+# created by white
+# 2016/12/20
+
+adb shell am start -n com.android.settings/com.android.settings.Settings

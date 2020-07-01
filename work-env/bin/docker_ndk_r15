@@ -1,0 +1,4 @@
+#!/bin/bash
+set -ex
+
+docker run -it --rm -v $1:/builds/stee/ dev.dingxiang-inc.com:4567/stee/dockers/dx-ndk:r15c /bin/sh

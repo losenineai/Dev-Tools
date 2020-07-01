@@ -1,0 +1,4 @@
+# created by white
+# 2016/12/20
+
+adb shell am start -n com.android.launcher/com.android.launcher2.Launcher

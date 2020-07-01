@@ -1,0 +1,38 @@
+#!/bin/bash
+set -ex
+
+# 脚本所在目录
+BIN_DIR=$(cd `dirname $0` && pwd)
+# 脚本lib目录
+LIB_DIR=$BIN_DIR/apk_sign-lib
+
+# apk源
+apk_src=$1
+# 输入apk所在目录
+apk_dir=`dirname $apk_src`
+# 输入apk文件名
+apk_name=`basename $apk_src` 
+
+# 签名后的apk
+apk_out=$apk_dir/signed-$apk_name
+
+# 签名文件
+key_file=$LIB_DIR/anti_debug.keystore
+# key_file=$LIB_DIR/dx-sdk-demo.keystore
+
+# 密码
+key_pwd=android
+# key_pwd=dingxiang
+
+# 别名
+key_alias=KEY0
+# key_alias=dx
+# key_alias=dx_demo.keystore
+
+echo "开始签名..."
+
+java -jar $LIB_DIR/apksigner.jar sign --ks ${key_file} --ks-key-alias ${key_alias} --ks-pass pass:${key_pwd} --key-pass pass:${key_pwd} -out ${apk_out} ${apk_src}
+
+echo "重签后apk：$apk_out"
+
+

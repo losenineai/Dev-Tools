@@ -1,0 +1,35 @@
+#!/bin/bash
+# set -ex
+
+# 脚本所在目录
+BIN_DIR=$(cd `dirname $0` && pwd)
+# 脚本lib目录
+LIB_DIR=$BIN_DIR/apk_sign-lib
+
+# apk源
+apk_src=$1
+# 输入apk所在目录
+apk_dir=`dirname $apk_src`
+# 输入apk文件名
+apk_name=`basename $apk_src .apk` 
+
+out_dir=$apk_dir/$apk_name
+
+tmp_dir=$apk_dir/unzip_tmp
+
+rm -fr $tmp_dir
+mkdir -p $tmp_dir
+
+unzip -o $apk_src -d $tmp_dir > $tmp_dir/unzip.log
+
+RSA=$tmp_dir/META-INF/*.RSA
+
+keytool -printcert -file $RSA\
+
+rm -fr $tmp_dir
+
+# 输出各版本签名支持
+apksigner verify -v $apk_src
+
+
+

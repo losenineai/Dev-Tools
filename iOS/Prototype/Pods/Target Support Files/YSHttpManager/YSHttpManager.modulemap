@@ -1,0 +1,6 @@
+framework module YSHttpManager {
+  umbrella header "YSHttpManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

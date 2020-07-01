@@ -1,0 +1,8 @@
+#!/bin/bash
+
+APK_SRC=$1
+PREFIX=${apkPath%.*}
+APK_OUT=${PREFIX}_sign.apk
+
+java -jar ${binBasePath}/signapk.jar ${binBasePath}/platform.x509.pem ${binBasePath}/platform.pk8 ${APK_SRC} ${APK_OUT}
+

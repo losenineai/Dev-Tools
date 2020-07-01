@@ -1,0 +1,3 @@
+
+
+svn st | grep "C" | awk '{print $3}' | xargs svn resolved

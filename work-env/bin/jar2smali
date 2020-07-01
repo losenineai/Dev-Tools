@@ -1,0 +1,31 @@
+# !/bin/bash
+
+set -ex
+
+# 当前执行文件路径
+BIN_DIR=$(cd `dirname $0` && pwd)
+# 脚本lib目录
+LIB_DIR=$BIN_DIR/jar2smali-libs
+
+# 源文件
+src_file=$1
+# 源文件所在目录
+src_dir=`dirname $src_file`
+# 源文件名，无后缀
+src_name=`basename $src_file .jar` 
+
+# 输出目录
+OUT_DIR=$src_dir/$src_name
+rm -fr $OUT_DIR
+mkdir -p $OUT_DIR
+
+
+TMP_DEX=$OUT_DIR/${src_name}.dex
+
+# jar2dex
+java -jar $LIB_DIR/dx.jar --dex --output=$TMP_DEX ${src_file}
+
+# dex2smali
+java -jar $LIB_DIR/baksmali-2.2.7.jar d $TMP_DEX -o $OUT_DIR
+
+rm -fr $TMP_DEX

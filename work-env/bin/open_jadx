@@ -1,0 +1,3 @@
+#!/bin/sh
+
+~/Work/Android/jadx-master/build/jadx/bin/jadx-gui

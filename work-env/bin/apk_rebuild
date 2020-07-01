@@ -1,0 +1,26 @@
+#!/bin/bash
+set -ex
+
+# 脚本所在目录
+BIN_DIR=$(cd `dirname $0` && pwd)
+# 脚本lib目录
+LIB_DIR=$BIN_DIR/apk_build-lib
+
+apk_dir=$1
+apk_name="re-`basename $apk_dir`.apk"
+apk_out=`dirname $apk_dir`/$apk_name
+apktool=$LIB_DIR/apktool_2.4.1.jar
+
+if [ -d ${apk_dir} ];then
+
+	# 解决重打包资源问题
+	java -jar $apktool  empty-framework-dir
+	# rm -fr ~/Library/apktool/framework/1.apk
+
+	java -jar $apktool b $apk_dir -o $apk_out
+
+	# 重签
+	apk_sign $apk_out
+
+	rm $apk_out
+fi

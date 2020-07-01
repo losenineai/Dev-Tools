@@ -1,0 +1,19 @@
+# !/bin/bash
+
+#set -ex
+
+# 当前执行文件路径
+BIN_DIR=$(cd `dirname $0` && pwd)
+# 脚本lib目录
+LIB_DIR=$BIN_DIR/smali2jar-libs
+
+if [ $# != 1 ] 
+then
+    echo "Error: Please input the <apk>"
+    exit 1
+fi
+
+# 源文件
+src=$1
+
+$LIB_DIR/aapt dump badging $src | grep -E "package|label|launchable-activity"

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.xxlib.utils.widget.RoundView
+            android:id="@+id/tv_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="90dp"
+            android:paddingTop="10dp"
+            android:text="任务完成任务完成任务完成任务完成"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:lineWidth="0dp"
+            app:solidColor="#ffa304"/>
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="+10"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/iv_middle"
+            android:layout_width="24dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2.5dp"
+            android:layout_toLeftOf="@id/tv_right"
+            android:src="@drawable/icon_flower"/>
+
+    </RelativeLayout>
+</FrameLayout>

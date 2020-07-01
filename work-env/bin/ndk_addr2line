@@ -1,0 +1,8 @@
+#!/bin/bash
+set -ex
+
+CMD=~/Work/Android/android-ndk-r15c/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-addr2line 
+SO_PATH=$1
+ADDR=$2
+
+$CMD -f -e $SO_PATH $ADDR

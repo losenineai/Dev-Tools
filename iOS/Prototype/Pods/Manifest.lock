@@ -1,0 +1,32 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.5)
+  - SnapKit (5.0.1)
+  - Toast-Swift (5.0.1)
+  - YSHttpManager (1.1.3)
+  - ZWPlaceHolder (0.0.2)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - SnapKit
+  - Toast-Swift
+  - YSHttpManager
+  - ZWPlaceHolder
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - SnapKit
+    - Toast-Swift
+    - YSHttpManager
+    - ZWPlaceHolder
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  YSHttpManager: 62a1bc0da101a77f0b2599b1688d51baace78c3c
+  ZWPlaceHolder: d55cce10c9930b48c31bf48e7f4748974a31f7e0
+
+PODFILE CHECKSUM: d17b496f918644971b04805b662ae9cd395ce641
+
+COCOAPODS: 1.9.1
