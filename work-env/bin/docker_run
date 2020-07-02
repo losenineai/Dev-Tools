@@ -1,0 +1,6 @@
+#!/bin/bash
+set -ex
+
+
+dir=`basename $1`
+docker run -it --rm -v $1/:/root/$dir $2 /bin/bash

@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+ZSH_DISABLE_COMPFIX=true
+
 # proxy list
  alias proxy='export all_proxy=socks5://127.0.0.1:1086'
  alias unproxy='unset all_proxy'
@@ -11,9 +13,10 @@ export ZSH=/Users/white/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="pygmalion"
+# ZSH_THEME="pygmalion"
 ZSH_THEME="af-magic"
-#ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
+# ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -89,18 +92,12 @@ plugins=(git)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-export MonkeyDevPath=/opt/MonkeyDev
-export MonkeyDevDeviceIP=
-export PATH=/opt/MonkeyDev/bin:$PATH
-
 
 source $ZSH/oh-my-zsh.sh
 source ~/.bash_profile
 source ~/bin/shell_func
+export PATH=~/bin:$PATH
 
 alias ls="ls -G"
 alias ll='ls -alFG'
-alias python=python3
 
