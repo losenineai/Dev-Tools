@@ -1,0 +1,3 @@
+[submodule "src/zkit"]
+	path = src/zkit
+	url = https://github.com/jmpews/zkit.git

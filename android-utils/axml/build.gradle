@@ -1,0 +1,5 @@
+
+dependencies {
+    testCompile group: 'xpp3', name: 'xpp3', version: '1.1.4c'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}

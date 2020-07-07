@@ -1,0 +1,29 @@
+#ifndef __BASE64_H__
+#define __BASE64_H__
+
+#ifdef DX_UTILS_CRYPTO_PREFIX
+DX_UTILS_CRYPTO_PREFIX
+#else
+#include "dx_utils_crypto_prefix.h"
+#endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+enum {BASE64_OK = 0, BASE64_INVALID};
+
+#define BASE64_ENCODE_OUT_SIZE(s)	(((s) + 2) / 3 * 4)
+#define BASE64_DECODE_OUT_SIZE(s)	(((s)) / 4 * 3)
+
+int base64_encode_imp(const unsigned char *in, unsigned int inlen, char *out);
+
+int base64_decode_imp(const char *in, unsigned int inlen, unsigned char *out);
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __BASE64_H__ */
+

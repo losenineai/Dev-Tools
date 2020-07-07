@@ -1,0 +1,2 @@
+#define LOGD(...)
+#define LOGE(...)
