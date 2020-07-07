@@ -1,0 +1,74 @@
+stages:
+- build_test
+- test
+- build
+- package
+
+
+build_test:
+  stage: build_test
+  image: $CI_REGISTRY/stee/dockers/dx-ndk:r15c
+  before_script:
+    - yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses || true
+  script:
+    - test/test-demo/build.sh
+    # - test/unit-test/build.sh
+  artifacts:
+    expire_in: 10 hrs
+    paths:
+      - test/build/*
+  except:
+    - tags
+
+test_apk:
+  stage: test
+  tags:
+    - libc-test
+  dependencies:
+    - build_test
+  script:
+    - (python /var/opt/DXTester/caserunner.py -i test/test-cases.json -rp test-res.csv -ld logout)
+    - ./test/unit-test/run.sh /var/opt/DXTester/tools/linux/adb
+  artifacts:
+    expire_in: 10 hrs
+    paths:
+      - test-res.csv
+      - logout/*
+  except:
+    - tags
+
+
+build-dxlibc:
+  stage: build
+  image: $CI_REGISTRY/stee/dockers/dx-ndk:r15c
+  before_script:
+    - yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses || true
+  script:
+    - ./package.sh
+    - ./strip.sh
+  artifacts:
+    expire_in: 2 hrs
+    paths:
+      - dist/*
+  only:
+    - tags
+
+package-dxlibc:
+  stage: package
+  dependencies:
+    - build-dxlibc
+  tags:
+    - default
+  image: docker:git
+  services:
+    - docker:dind
+  before_script:
+    - apk --cache-dir=/cache update
+    - apk --cache-dir=/cache add bash
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+    - chmod 755 *.sh
+  script:
+    - gitlab_login_dockers
+    - ./dx-push.sh ./dist/
+  only:
+   - tags

@@ -1,0 +1,37 @@
+#rm test-main build files
+test/test-main/libs/*
+test/test-main/obj/*
+test/test-main/jni/libs/*
+test/test-main/jni/include/*
+
+#rm test-demo build files
+test/test-demo/app/build/*
+test/test-demo/app/src/main/cpp/dxlibc/*
+test/test-demo/app/src/main/cpp/googletest/*
+test/test-demo/build/*
+test/test-demo/app/.externalNativeBuild/*
+test/test-demo/local.properties
+test/test-demo/test-demo.iml
+test/test-demo/app/app.iml
+test/test-demo/.gradle/*
+test/test-demo/.idea/*
+
+#rm dx-libc-src/obj
+dx-libc-src/obj/*
+dx-libc-src/libs/*
+
+#rm googletest build files
+test/googletest/obj/*
+
+#rm unit-test build files and dependences files
+test/unit-test/jni/googletest/*
+test/unit-test/libs/*
+test/unit-test/obj/*
+test/unit-test/jni/dxlibc/*
+
+#rm dist
+dist/*
+test/build/*
+
+#rm .vscode
+.vscode/*
