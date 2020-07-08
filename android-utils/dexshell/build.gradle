@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "com.mobile.appen"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        externalNativeBuild {
+            ndkBuild {
+                arguments 'NDK_APPLICATION_MK:=src/main/cpp/Application.mk', '-j1', "V=1"
+                abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+            }
+        }
+    }
+
+    buildTypes {
+
+        debug {
+
+            debuggable true
+            minifyEnabled false
+
+            externalNativeBuild {
+                ndkBuild {
+                    cFlags "-DDEBUG"
+                    abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+                }
+            }
+        }
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            externalNativeBuild {
+                ndkBuild {
+                    abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+                }
+            }
+        }
+
+        asan.initWith(buildTypes.debug)
+        asan {
+            debuggable true
+            externalNativeBuild {
+                ndkBuild {
+                    arguments "ENABLE_ASAN=1"
+                    cFlags "-DDEBUG"
+                }
+            }
+        }
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/cpp/Android.mk'
+        }
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile project(':dx-wallent-android-common')
+}

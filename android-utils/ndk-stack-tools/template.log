@@ -1,0 +1,20 @@
+06-22 17:58:09.559 195-195/? A/DEBUG: *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-22 17:58:09.560 195-195/? A/DEBUG: Build fingerprint: 'google/hammerhead/hammerhead:6.0.1/MMB29K/2419427:user/release-keys'
+06-22 17:58:09.560 195-195/? A/DEBUG: Revision: '0'
+06-22 17:58:09.560 195-195/? A/DEBUG: ABI: 'arm'
+06-22 17:58:09.560 195-195/? A/DEBUG: pid: 6892, tid: 7484, name: Thread-4123  >>> com.bytedance.mobile.secsdk.demo <<<
+06-22 17:58:09.560 195-195/? A/DEBUG: signal 5 (SIGTRAP), code 1 (TRAP_BRKPT), fault addr 0xb6f813b0
+06-22 17:58:09.576 195-195/? A/DEBUG:     r0 8eafffb0  r1 8eafffff  r2 0000008f  r3 0000002a
+06-22 17:58:09.576 195-195/? A/DEBUG:     r4 00000400  r5 00000024  r6 8eafff84  r7 bb779a90
+06-22 17:58:09.576 195-195/? A/DEBUG:     r8 bea41c34  r9 7d779000  sl 00000000  fp 000000ae
+06-22 17:58:09.576 195-195/? A/DEBUG:     ip 7d779020  sp bb779a58  lr bb7d199b  pc bb812150  cpsr 20070030
+06-22 17:58:09.591 195-195/? A/DEBUG: backtrace:
+06-22 17:58:09.591 195-195/? A/DEBUG:     #00 pc 00078830 /data/app/com.lemon.faceu-2/lib/arm/libmetasec.so
+06-22 17:58:09.592 195-195/? A/DEBUG:     #01 pc 000786d4 /data/app/com.lemon.faceu-2/lib/arm/libmetasec.so
+06-22 17:58:09.592 195-195/? A/DEBUG:     #02 pc 00079024 /data/app/com.lemon.faceu-2/lib/arm/libmetasec.so
+06-22 17:58:09.592 195-195/? A/DEBUG:     #03 pc 000659c0 /data/app/com.lemon.faceu-2/lib/arm/libmetasec.so
+06-22 17:58:09.592 195-195/? A/DEBUG:     #04 pc 0008ca20 /data/app/com.lemon.faceu-2/lib/arm/libmetasec.so
+06-22 17:58:09.592 195-195/? A/DEBUG:     #05 pc 00039450 /data/app/com.lemon.faceu-2/lib/arm/libmetasec.so
+06-22 17:58:09.592 195-195/? A/DEBUG:     #06 pc 00031ed8 /data/app/com.lemon.faceu-2/lib/arm/libmetasec.so
+06-22 17:58:09.592 195-195/? A/DEBUG:     #07 pc 000b5acc /data/app/com.lemon.faceu-2/lib/arm/libmetasec.so
+06-22 17:58:09.592 195-195/? A/DEBUG:     #08 pc 000b65e0 /data/app/com.lemon.faceu-2/lib/arm/libmetasec.so
