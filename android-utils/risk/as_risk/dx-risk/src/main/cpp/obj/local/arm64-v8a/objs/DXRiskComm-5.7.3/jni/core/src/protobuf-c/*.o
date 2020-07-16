@@ -1,0 +1,9 @@
+E
+-O2
+XXXXXimpossibleXXXX
+-fpic
+XXXXXimpossibleXXXX
+-gcc-toolchain
+/opt/dx-android-ndk/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64
+-target
+aarch64-none-linux-android

@@ -1,0 +1,9 @@
+E
+-O2
+XXXXXimpossibleXXXX
+-fPIC
+XXXXXimpossibleXXXX
+-gcc-toolchain
+/opt/dx-android-ndk/toolchains/x86-4.9/prebuilt/linux-x86_64
+-target
+i686-none-linux-android

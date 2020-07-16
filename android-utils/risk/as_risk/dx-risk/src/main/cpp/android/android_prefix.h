@@ -1,0 +1,41 @@
+
+#define DXFindClass BOiTBLilOIAIlIlITillllAOlLIlOiliLLL
+#define DXGetStaticMethodID lOiiOLiILliIililiiiLIlAiLIOlTILLllI
+#define DXGetMethodID OAAIllLTIiOLAOllBliOiLILlllTLllBlLi
+#define DXGetObjectClass BBTAlillBOlOiIBOTLAilTOiilLlBIiOIlI
+#define DXDeleteGlobalRef LIOiiOiLBliOLLiTBlTlIiIlBIIIlBiiIil
+#define DXGetObjectMethodID iiillBTIiITBlilllIiALlBILllTiAlLlll
+#define DXCallBooleanMethodByName iIiATlllTiLLTiLlATillillLLliIOTlIlL
+#define DXCallBooleanMethodV liOAllLTLOLTlTBLiiLOILilAOlLlOlillL
+#define DXCallIntMethodByName BLiLLiLiiBlllIBIliliilTlATiBiTBBOLT
+#define DXCallIntMethodV OBlLTLAOBlLiLLBliBliTiiLiiiLllLTOTl
+#define DXCallStaticObjectMethodV TAAAlliliAAiTilLlLTliOLOOBillLAiOiB
+#define DXCallStaticObjectMethodByName llABTLlTTlIlBlIOOiTLLBAOiiOITLlLTLl
+#define DXCallObjectMethodByName BOiAilIAillTTiOlOTLiiOOBlIBBiLLiABL
+#define DXCallObjectMethodV llAlLIlTLiOlllILLllBLTiIlBBIlTiTiLl
+#define DXCallStaticVoidMethodByName AlIlAIBAOOLlilLlLIiIlBLlBliLLIILBlL
+#define DXCallStaticVoidMethodV TTlillLAiLOLOilOIllIBAiiiAiBALllBlT
+#define DXCallVoidMethodV iillIlLLOLlIAlBlAiiiIlLliOABAlIAilL
+#define DXCallVoidMethodByName lBAilllLlLiIlllllLLlILiTTOTTlTAiill
+#define DXCallStaticBooleanMethodV IiBATLILIliOlLBBiiLAiIiLlliAiliilLB
+#define DXCallStaticBooleanMethodByName AlALLABTlBliTlBTilIIlOlBiITlLLLLTAL
+#define DXCallStaticIntMethodV illiLlTillliOlTLLLllTlIlliALOiOALil
+#define DXCallStaticIntMethodByName IllLliTAiliOiBTlliilLOIILlLLATTLTLl
+#define DXNewObjectV LiTLIIilLILTiiiLBAiIOlLILiilTlllAli
+#define DXNewObjectByName lATAALABLlOTLliliTlBAIBilOlBTTliiAT
+#define DXToReflectedMethod liiBOTlLllTlIOLTlTlALTOlllBAILATiAl
+#define DXGetGlobalContext lTliilBlIlLOllLiAOOlIiITIlLBLBLLIll
+
+#define DXCheckException lliABlTBLILLAiOlilOLlLTlAllLLBOlliB
+#define DXGetStaticObjectField ILlLLlLlTIiBLlBLilBLiIliBBiliBliAAI
+
+
+
+// class DXEnv {
+// public:
+//     DXEnv(JNIEnv* env);
+//     virtual ~DXEnv();
+
+// public:
+//     JNIEnv* _env;
+// }

@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dx.mobile.risk" >
+
+
+    <application android:allowBackup="false" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+    </application>
+
+
+    <!-- 必选-默认申请-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+
+    <!-- 必选-6.0或以上需动态申请 生成uuid数据文件，保存在sdcard-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- 必选-6.0或以上需动态申请 获取手机设备唯一码-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- 可选-6.0或以上需动态申请 收集定位信息 手机wifi ap mac 等信息-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--采集心率传感器-->
+    <!--<uses-permission android:name="android.permission.BODY_SENSORS" />-->
+    <!--<uses-permission android:name="com.samsung.permission.HRM_EXT" />-->
+    <!--<uses-permission android:name="com.samsung.permission.SSENSOR" />-->
+
+</manifest>
