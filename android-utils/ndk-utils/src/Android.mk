@@ -28,7 +28,7 @@ LOCAL_CFLAGS += -fvisibility=hidden
 LOCAL_LDLIBS += -llog -lz -latomic
 
 
-SRC_DIR := $(LOCAL_PATH)/../../src
+SRC_DIR := $(LOCAL_PATH)
 
 LOCAL_C_INCLUDES +=                                             \
     $(SRC_DIR)/                                                 \
@@ -36,6 +36,7 @@ LOCAL_C_INCLUDES +=                                             \
 
 SRC := $(wildcard                                               \
     $(SRC_DIR)/*.cc                                             \
+    $(SRC_DIR)/*.cpp                                             \
     $(SRC_DIR)/*.c                                              \
 )                                                               \
 
@@ -44,9 +45,9 @@ LOCAL_SRC_FILES :=  $(SRC:$(LOCAL_PATH)/%=%)               \
 
 
 # build so
-#include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
 
 # build a
-include $(BUILD_STATIC_LIBRARY)
+# include $(BUILD_STATIC_LIBRARY)
 
 

@@ -4,7 +4,7 @@
 
 
 #include "log.h"
-#include "jni_utils.h"
+#include "jnic_utils.h"
 #include <mutex>
 #include <stdlib.h>
 #include <string>
