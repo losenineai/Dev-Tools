@@ -1,0 +1,5 @@
+*.settings
+*.project
+*.idea
+*.gradle
+android-utils/ndk-utils/build
