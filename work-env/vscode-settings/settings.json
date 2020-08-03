@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "Visual Studio 2019 Dark",
+    "files.autoSave": "onFocusChange",
+    "workbench.startupEditor": "newUntitledFile",
+    "C_Cpp.autoAddFileAssociations": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.project.importOnFirstTimeStartup": "automatic",
+    "workbench.editor.scrollToSwitchTabs": true,
+    "window.zoomLevel": 0
+}
