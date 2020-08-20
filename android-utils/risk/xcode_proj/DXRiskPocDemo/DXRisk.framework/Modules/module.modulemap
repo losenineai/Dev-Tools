@@ -1,0 +1,6 @@
+framework module DXRisk {
+  umbrella header "DXRisk.h"
+
+  export *
+  module * { export * }
+}

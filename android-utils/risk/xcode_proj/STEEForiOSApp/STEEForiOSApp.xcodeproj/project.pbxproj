@@ -1,0 +1,1283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		375C92301F29FA2C00B5B667 /* stee_license.dx in Resources */ = {isa = PBXBuildFile; fileRef = 375C922F1F29FA2C00B5B667 /* stee_license.dx */; };
+		379023A01F4FBF9F00A8D25D /* STEEForiOSDemo.mm in Sources */ = {isa = PBXBuildFile; fileRef = D67F8E7D1F0CFED400055AB5 /* STEEForiOSDemo.mm */; };
+		379023A11F4FBF9F00A8D25D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C349711F05F67800E2690F /* ViewController.m */; };
+		379023A21F4FBF9F00A8D25D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C3496E1F05F67800E2690F /* AppDelegate.m */; };
+		379023A31F4FBF9F00A8D25D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C3496B1F05F67800E2690F /* main.m */; };
+		379023A61F4FBF9F00A8D25D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C39DB81F093A4500262EBA /* libc++.tbd */; };
+		379023A81F4FBF9F00A8D25D /* stee_license.dx in Resources */ = {isa = PBXBuildFile; fileRef = 375C922F1F29FA2C00B5B667 /* stee_license.dx */; };
+		379023A91F4FBF9F00A8D25D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C349781F05F67800E2690F /* LaunchScreen.storyboard */; };
+		379023AA1F4FBF9F00A8D25D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C349761F05F67800E2690F /* Assets.xcassets */; };
+		379023AB1F4FBF9F00A8D25D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C349731F05F67800E2690F /* Main.storyboard */; };
+		4A36CD531FBEE77C0024AF12 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD521FBEE77C0024AF12 /* CoreTelephony.framework */; };
+		4A36CD561FBEE7820024AF12 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD551FBEE7820024AF12 /* CoreLocation.framework */; };
+		4A36CD581FBEE79A0024AF12 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD571FBEE79A0024AF12 /* SystemConfiguration.framework */; };
+		4A4A33681FA738FE00B8777C /* libSTEERiskMgrForiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 374F3C171F1D9C7100B20748 /* libSTEERiskMgrForiOS.a */; };
+		4A91C3861FD54F24009D36AD /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 4A91C3851FD54F24009D36AD /* index.html */; };
+		4A91C3871FD54F24009D36AD /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 4A91C3851FD54F24009D36AD /* index.html */; };
+		793C27FC215A1785002DA658 /* STEEForiOSDemo.mm in Sources */ = {isa = PBXBuildFile; fileRef = D67F8E7D1F0CFED400055AB5 /* STEEForiOSDemo.mm */; };
+		793C27FD215A1785002DA658 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C349711F05F67800E2690F /* ViewController.m */; };
+		793C27FE215A1785002DA658 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C3496E1F05F67800E2690F /* AppDelegate.m */; };
+		793C27FF215A1785002DA658 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C3496B1F05F67800E2690F /* main.m */; };
+		793C2801215A1785002DA658 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD571FBEE79A0024AF12 /* SystemConfiguration.framework */; };
+		793C2802215A1785002DA658 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD551FBEE7820024AF12 /* CoreLocation.framework */; };
+		793C2803215A1785002DA658 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD521FBEE77C0024AF12 /* CoreTelephony.framework */; };
+		793C2805215A1785002DA658 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C39DB81F093A4500262EBA /* libc++.tbd */; };
+		793C2807215A1785002DA658 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 4A91C3851FD54F24009D36AD /* index.html */; };
+		793C2808215A1785002DA658 /* stee_license.dx in Resources */ = {isa = PBXBuildFile; fileRef = 375C922F1F29FA2C00B5B667 /* stee_license.dx */; };
+		793C2809215A1785002DA658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C349781F05F67800E2690F /* LaunchScreen.storyboard */; };
+		793C280A215A1785002DA658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C349761F05F67800E2690F /* Assets.xcassets */; };
+		793C280B215A1785002DA658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C349731F05F67800E2690F /* Main.storyboard */; };
+		793C2813215A1800002DA658 /* DXRisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A325DFD20917A2900091A17 /* DXRisk.framework */; };
+		793C2815215A1959002DA658 /* DXRisk.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A325DFD20917A2900091A17 /* DXRisk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7948D35D22325588009857DD /* STEEForiOSDemo.mm in Sources */ = {isa = PBXBuildFile; fileRef = D67F8E7D1F0CFED400055AB5 /* STEEForiOSDemo.mm */; };
+		7948D35E22325588009857DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C349711F05F67800E2690F /* ViewController.m */; };
+		7948D35F22325588009857DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C3496E1F05F67800E2690F /* AppDelegate.m */; };
+		7948D36022325588009857DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C3496B1F05F67800E2690F /* main.m */; };
+		7948D36322325588009857DD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD571FBEE79A0024AF12 /* SystemConfiguration.framework */; };
+		7948D36422325588009857DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD551FBEE7820024AF12 /* CoreLocation.framework */; };
+		7948D36522325588009857DD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD521FBEE77C0024AF12 /* CoreTelephony.framework */; };
+		7948D36622325588009857DD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C39DB81F093A4500262EBA /* libc++.tbd */; };
+		7948D36822325588009857DD /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 4A91C3851FD54F24009D36AD /* index.html */; };
+		7948D36922325588009857DD /* stee_license.dx in Resources */ = {isa = PBXBuildFile; fileRef = 375C922F1F29FA2C00B5B667 /* stee_license.dx */; };
+		7948D36A22325588009857DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C349781F05F67800E2690F /* LaunchScreen.storyboard */; };
+		7948D36B22325588009857DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C349761F05F67800E2690F /* Assets.xcassets */; };
+		7948D36C22325588009857DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C349731F05F67800E2690F /* Main.storyboard */; };
+		7948D3DF223270CA009857DD /* DXRiskStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7948D37C22325588009857DD /* DXRiskStatic.framework */; };
+		7949BA9D232244C4001CE00B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7949BA9A232244C4001CE00B /* main.m */; };
+		7949BA9E232244C4001CE00B /* AppTestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7949BA9B232244C4001CE00B /* AppTestDelegate.h */; };
+		7949BA9F232244C4001CE00B /* AppTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7949BA9C232244C4001CE00B /* AppTestDelegate.m */; };
+		7949BAA0232244FC001CE00B /* DXRiskStaticTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797FE93123223FCC00A0444E /* DXRiskStaticTest.framework */; };
+		7949BAA223224AF0001CE00B /* LaunchScreenTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7949BAA123224AF0001CE00B /* LaunchScreenTest.storyboard */; };
+		794E48932338CF64001FD171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C349731F05F67800E2690F /* Main.storyboard */; };
+		797FE91523223FCB00A0444E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A90FB022F19EF90055F6A3 /* Security.framework */; };
+		797FE91623223FCB00A0444E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C3A5B521BFD77E00F1B58C /* libz.tbd */; };
+		797FE91723223FCB00A0444E /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A90FAA22F19EE00055F6A3 /* Bugly.framework */; };
+		797FE91923223FCB00A0444E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD571FBEE79A0024AF12 /* SystemConfiguration.framework */; };
+		797FE91A23223FCB00A0444E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD551FBEE7820024AF12 /* CoreLocation.framework */; };
+		797FE91B23223FCB00A0444E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD521FBEE77C0024AF12 /* CoreTelephony.framework */; };
+		797FE91C23223FCB00A0444E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C39DB81F093A4500262EBA /* libc++.tbd */; };
+		797FE92323223FCB00A0444E /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 4A91C3851FD54F24009D36AD /* index.html */; };
+		797FE92423223FCB00A0444E /* stee_license.dx in Resources */ = {isa = PBXBuildFile; fileRef = 375C922F1F29FA2C00B5B667 /* stee_license.dx */; };
+		797FE92623223FCB00A0444E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C349761F05F67800E2690F /* Assets.xcassets */; };
+		79A50F0022438F2F0069CFBB /* libSTEERiskMgrForiOSWithIDFA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EB174A1F1DA5120056A851 /* libSTEERiskMgrForiOSWithIDFA.a */; };
+		79A90FAB22F19EE00055F6A3 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A90FAA22F19EE00055F6A3 /* Bugly.framework */; };
+		79A90FAC22F19EE00055F6A3 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A90FAA22F19EE00055F6A3 /* Bugly.framework */; };
+		79A90FAD22F19EE00055F6A3 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A90FAA22F19EE00055F6A3 /* Bugly.framework */; };
+		79A90FAE22F19EE00055F6A3 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A90FAA22F19EE00055F6A3 /* Bugly.framework */; };
+		79A90FAF22F19EF30055F6A3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C3A5B521BFD77E00F1B58C /* libz.tbd */; };
+		79A90FB122F19EF90055F6A3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A90FB022F19EF90055F6A3 /* Security.framework */; };
+		79C3A76D21BFDD5F00F1B58C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD521FBEE77C0024AF12 /* CoreTelephony.framework */; };
+		79C3A76E21BFDD6B00F1B58C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD551FBEE7820024AF12 /* CoreLocation.framework */; };
+		79C3A76F21BFDD7100F1B58C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A36CD571FBEE79A0024AF12 /* SystemConfiguration.framework */; };
+		79C5C4032372BA1600D6704C /* DXRisk.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C5C4022372BA1600D6704C /* DXRisk.h */; };
+		79C5C4042372BA1600D6704C /* DXRisk.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C5C4022372BA1600D6704C /* DXRisk.h */; };
+		79C5C4052372BA1600D6704C /* DXRisk.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C5C4022372BA1600D6704C /* DXRisk.h */; };
+		79C5C4062372BA1600D6704C /* DXRisk.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C5C4022372BA1600D6704C /* DXRisk.h */; };
+		79C5C4072372BA1600D6704C /* DXRisk.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C5C4022372BA1600D6704C /* DXRisk.h */; };
+		8452A9E2225DA43600E9E7B0 /* TestWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8452A9E0225DA43600E9E7B0 /* TestWebView.h */; };
+		8452A9E3225DA43600E9E7B0 /* TestWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452A9E1225DA43600E9E7B0 /* TestWebView.m */; };
+		84CBCD94225C9F1B008517FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CBCD93225C9F1B008517FE /* JavaScriptCore.framework */; };
+		84CBCD97225C9F26008517FE /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBCD95225C9F26008517FE /* Test.m */; };
+		84CBCD98225C9F26008517FE /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = 84CBCD96225C9F26008517FE /* Test.h */; };
+		95C3496C1F05F67800E2690F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C3496B1F05F67800E2690F /* main.m */; };
+		95C3496F1F05F67800E2690F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C3496E1F05F67800E2690F /* AppDelegate.m */; };
+		95C349721F05F67800E2690F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C349711F05F67800E2690F /* ViewController.m */; };
+		95C349771F05F67800E2690F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C349761F05F67800E2690F /* Assets.xcassets */; };
+		95C3497A1F05F67800E2690F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C349781F05F67800E2690F /* LaunchScreen.storyboard */; };
+		95C39DB91F093A4500262EBA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C39DB81F093A4500262EBA /* libc++.tbd */; };
+		D67F8E7F1F0CFED400055AB5 /* STEEForiOSDemo.mm in Sources */ = {isa = PBXBuildFile; fileRef = D67F8E7D1F0CFED400055AB5 /* STEEForiOSDemo.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		374F3C161F1D9C7100B20748 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C3498D1F05F7A200E2690F /* STEEForiOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 374F3C111F1D9B7500B20748;
+			remoteInfo = STEERiskMgrForiOS;
+		};
+		379023B31F4FBFB800A8D25D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C3498D1F05F7A200E2690F /* STEEForiOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 374F3BB31F1D9B7500B20748;
+			remoteInfo = STEERiskMgrForiOS;
+		};
+		37EB17491F1DA5120056A851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C3498D1F05F7A200E2690F /* STEEForiOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 37EB17421F1DA3ED0056A851;
+			remoteInfo = STEERiskMgrForiOSWithIDFA;
+		};
+		4A325DFC20917A2900091A17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C3498D1F05F7A200E2690F /* STEEForiOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A2B67EC203195E300BB556B;
+			remoteInfo = DXRisk;
+		};
+		4A325DFE20917A2900091A17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C3498D1F05F7A200E2690F /* STEEForiOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A665A69204138F8008307CE;
+			remoteInfo = DXRiskWithIDFA;
+		};
+		7948D37B22325588009857DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C3498D1F05F7A200E2690F /* STEEForiOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7948D2ED223248A2009857DD;
+			remoteInfo = DXRiskStatic;
+		};
+		7948D37D22325588009857DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C3498D1F05F7A200E2690F /* STEEForiOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7948D359223248B6009857DD;
+			remoteInfo = DXRiskStaticWithIDFA;
+		};
+		797FE93023223FCC00A0444E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C3498D1F05F7A200E2690F /* STEEForiOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 797FE90C23223D5400A0444E;
+			remoteInfo = DXRiskStaticTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		793C2814215A194C002DA658 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				793C2815215A1959002DA658 /* DXRisk.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		375C922F1F29FA2C00B5B667 /* stee_license.dx */ = {isa = PBXFileReference; lastKnownFileType = file; path = stee_license.dx; sourceTree = "<group>"; };
+		379023B01F4FBF9F00A8D25D /* STEERiskMgrForiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STEERiskMgrForiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A36CD521FBEE77C0024AF12 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4A36CD551FBEE7820024AF12 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4A36CD571FBEE79A0024AF12 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4A91C3851FD54F24009D36AD /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		793C2811215A1785002DA658 /* STEEForiOSAppFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STEEForiOSAppFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7948D37422325588009857DD /* STEEForiOSAppStaticFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STEEForiOSAppStaticFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7949BA9A232244C4001CE00B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7949BA9B232244C4001CE00B /* AppTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTestDelegate.h; sourceTree = "<group>"; };
+		7949BA9C232244C4001CE00B /* AppTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTestDelegate.m; sourceTree = "<group>"; };
+		7949BAA123224AF0001CE00B /* LaunchScreenTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenTest.storyboard; sourceTree = "<group>"; };
+		794E48942338D1EC001FD171 /* Info_test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_test.plist; sourceTree = "<group>"; };
+		79789D0F21DEFEF0006058E2 /* STEEForiOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = STEEForiOSApp.entitlements; sourceTree = "<group>"; };
+		797FE92D23223FCB00A0444E /* STEEForiOSAppStaticFrameworkTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STEEForiOSAppStaticFrameworkTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A90FAA22F19EE00055F6A3 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bugly.framework; path = STEEForiOSApp/Bugly.framework; sourceTree = "<group>"; };
+		79A90FB022F19EF90055F6A3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		79C3A5B321BFD77400F1B58C /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		79C3A5B521BFD77E00F1B58C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		79C3A5B721BFD78700F1B58C /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		79C5C4022372BA1600D6704C /* DXRisk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DXRisk.h; path = ../STEEForiOS/DXRisk/ios/DXRisk.h; sourceTree = "<group>"; };
+		8452A9E0225DA43600E9E7B0 /* TestWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestWebView.h; sourceTree = "<group>"; };
+		8452A9E1225DA43600E9E7B0 /* TestWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestWebView.m; sourceTree = "<group>"; };
+		84CBCD93225C9F1B008517FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		84CBCD95225C9F26008517FE /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		84CBCD96225C9F26008517FE /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		95C349671F05F67800E2690F /* STEEForiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STEEForiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C3496B1F05F67800E2690F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95C3496D1F05F67800E2690F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95C3496E1F05F67800E2690F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95C349701F05F67800E2690F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		95C349711F05F67800E2690F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		95C349741F05F67800E2690F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95C349761F05F67800E2690F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95C349791F05F67800E2690F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95C3497B1F05F67800E2690F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C3498D1F05F7A200E2690F /* STEEForiOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = STEEForiOS.xcodeproj; path = ../STEEForiOS/STEEForiOS.xcodeproj; sourceTree = "<group>"; };
+		95C39DB81F093A4500262EBA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D67F8E7C1F0CFED400055AB5 /* STEEForiOSDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STEEForiOSDemo.h; sourceTree = "<group>"; };
+		D67F8E7D1F0CFED400055AB5 /* STEEForiOSDemo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STEEForiOSDemo.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		379023A41F4FBF9F00A8D25D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A90FAC22F19EE00055F6A3 /* Bugly.framework in Frameworks */,
+				79A50F0022438F2F0069CFBB /* libSTEERiskMgrForiOSWithIDFA.a in Frameworks */,
+				79C3A76F21BFDD7100F1B58C /* SystemConfiguration.framework in Frameworks */,
+				79C3A76E21BFDD6B00F1B58C /* CoreLocation.framework in Frameworks */,
+				79C3A76D21BFDD5F00F1B58C /* CoreTelephony.framework in Frameworks */,
+				379023A61F4FBF9F00A8D25D /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793C2800215A1785002DA658 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A90FAD22F19EE00055F6A3 /* Bugly.framework in Frameworks */,
+				793C2813215A1800002DA658 /* DXRisk.framework in Frameworks */,
+				793C2801215A1785002DA658 /* SystemConfiguration.framework in Frameworks */,
+				793C2802215A1785002DA658 /* CoreLocation.framework in Frameworks */,
+				793C2803215A1785002DA658 /* CoreTelephony.framework in Frameworks */,
+				793C2805215A1785002DA658 /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7948D36122325588009857DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A90FB122F19EF90055F6A3 /* Security.framework in Frameworks */,
+				79A90FAF22F19EF30055F6A3 /* libz.tbd in Frameworks */,
+				79A90FAE22F19EE00055F6A3 /* Bugly.framework in Frameworks */,
+				7948D3DF223270CA009857DD /* DXRiskStatic.framework in Frameworks */,
+				7948D36322325588009857DD /* SystemConfiguration.framework in Frameworks */,
+				7948D36422325588009857DD /* CoreLocation.framework in Frameworks */,
+				7948D36522325588009857DD /* CoreTelephony.framework in Frameworks */,
+				7948D36622325588009857DD /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797FE91423223FCB00A0444E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7949BAA0232244FC001CE00B /* DXRiskStaticTest.framework in Frameworks */,
+				797FE91523223FCB00A0444E /* Security.framework in Frameworks */,
+				797FE91623223FCB00A0444E /* libz.tbd in Frameworks */,
+				797FE91723223FCB00A0444E /* Bugly.framework in Frameworks */,
+				797FE91923223FCB00A0444E /* SystemConfiguration.framework in Frameworks */,
+				797FE91A23223FCB00A0444E /* CoreLocation.framework in Frameworks */,
+				797FE91B23223FCB00A0444E /* CoreTelephony.framework in Frameworks */,
+				797FE91C23223FCB00A0444E /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C349641F05F67800E2690F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CBCD94225C9F1B008517FE /* JavaScriptCore.framework in Frameworks */,
+				4A4A33681FA738FE00B8777C /* libSTEERiskMgrForiOS.a in Frameworks */,
+				4A36CD581FBEE79A0024AF12 /* SystemConfiguration.framework in Frameworks */,
+				4A36CD561FBEE7820024AF12 /* CoreLocation.framework in Frameworks */,
+				4A36CD531FBEE77C0024AF12 /* CoreTelephony.framework in Frameworks */,
+				79A90FAB22F19EE00055F6A3 /* Bugly.framework in Frameworks */,
+				95C39DB91F093A4500262EBA /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7949BA932322407E001CE00B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				7949BA9B232244C4001CE00B /* AppTestDelegate.h */,
+				7949BA9C232244C4001CE00B /* AppTestDelegate.m */,
+				7949BA9A232244C4001CE00B /* main.m */,
+				7949BAA123224AF0001CE00B /* LaunchScreenTest.storyboard */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		95C3495E1F05F67800E2690F = {
+			isa = PBXGroup;
+			children = (
+				79C5C4022372BA1600D6704C /* DXRisk.h */,
+				79A90FAA22F19EE00055F6A3 /* Bugly.framework */,
+				7949BA932322407E001CE00B /* Test */,
+				95C3498D1F05F7A200E2690F /* STEEForiOS.xcodeproj */,
+				95C349691F05F67800E2690F /* STEEForiOSApp */,
+				95C349681F05F67800E2690F /* Products */,
+				95C39DB71F093A4500262EBA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95C349681F05F67800E2690F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95C349671F05F67800E2690F /* STEEForiOSApp.app */,
+				379023B01F4FBF9F00A8D25D /* STEERiskMgrForiOSApp.app */,
+				793C2811215A1785002DA658 /* STEEForiOSAppFramework.app */,
+				7948D37422325588009857DD /* STEEForiOSAppStaticFramework.app */,
+				797FE92D23223FCB00A0444E /* STEEForiOSAppStaticFrameworkTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95C349691F05F67800E2690F /* STEEForiOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				794E48942338D1EC001FD171 /* Info_test.plist */,
+				84CBCD96225C9F26008517FE /* Test.h */,
+				84CBCD95225C9F26008517FE /* Test.m */,
+				79789D0F21DEFEF0006058E2 /* STEEForiOSApp.entitlements */,
+				4A91C3851FD54F24009D36AD /* index.html */,
+				D67F8E7C1F0CFED400055AB5 /* STEEForiOSDemo.h */,
+				D67F8E7D1F0CFED400055AB5 /* STEEForiOSDemo.mm */,
+				95C3496D1F05F67800E2690F /* AppDelegate.h */,
+				95C3496E1F05F67800E2690F /* AppDelegate.m */,
+				95C349701F05F67800E2690F /* ViewController.h */,
+				95C349711F05F67800E2690F /* ViewController.m */,
+				95C349731F05F67800E2690F /* Main.storyboard */,
+				95C349761F05F67800E2690F /* Assets.xcassets */,
+				95C349781F05F67800E2690F /* LaunchScreen.storyboard */,
+				95C3497B1F05F67800E2690F /* Info.plist */,
+				95C3496A1F05F67800E2690F /* Supporting Files */,
+				8452A9E0225DA43600E9E7B0 /* TestWebView.h */,
+				8452A9E1225DA43600E9E7B0 /* TestWebView.m */,
+			);
+			path = STEEForiOSApp;
+			sourceTree = "<group>";
+		};
+		95C3496A1F05F67800E2690F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				375C922F1F29FA2C00B5B667 /* stee_license.dx */,
+				95C3496B1F05F67800E2690F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95C3498E1F05F7A200E2690F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				374F3C171F1D9C7100B20748 /* libSTEERiskMgrForiOS.a */,
+				37EB174A1F1DA5120056A851 /* libSTEERiskMgrForiOSWithIDFA.a */,
+				4A325DFD20917A2900091A17 /* DXRisk.framework */,
+				4A325DFF20917A2900091A17 /* DXRiskWithIDFA.framework */,
+				7948D37C22325588009857DD /* DXRiskStatic.framework */,
+				7948D37E22325588009857DD /* DXRiskStaticWithIDFA.framework */,
+				797FE93123223FCC00A0444E /* DXRiskStaticTest.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95C39DB71F093A4500262EBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79A90FB022F19EF90055F6A3 /* Security.framework */,
+				84CBCD93225C9F1B008517FE /* JavaScriptCore.framework */,
+				79C3A5B721BFD78700F1B58C /* libresolv.9.tbd */,
+				79C3A5B521BFD77E00F1B58C /* libz.tbd */,
+				79C3A5B321BFD77400F1B58C /* libc++abi.tbd */,
+				4A36CD571FBEE79A0024AF12 /* SystemConfiguration.framework */,
+				4A36CD551FBEE7820024AF12 /* CoreLocation.framework */,
+				4A36CD521FBEE77C0024AF12 /* CoreTelephony.framework */,
+				95C39DB81F093A4500262EBA /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		379023AC1F4FBF9F00A8D25D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C5C4042372BA1600D6704C /* DXRisk.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793C280C215A1785002DA658 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C5C4052372BA1600D6704C /* DXRisk.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7948D36D22325588009857DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C5C4062372BA1600D6704C /* DXRisk.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797FE92823223FCB00A0444E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7949BA9E232244C4001CE00B /* AppTestDelegate.h in Headers */,
+				79C5C4072372BA1600D6704C /* DXRisk.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C39D7F1F08EBD700262EBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C5C4032372BA1600D6704C /* DXRisk.h in Headers */,
+				84CBCD98225C9F26008517FE /* Test.h in Headers */,
+				8452A9E2225DA43600E9E7B0 /* TestWebView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3790239C1F4FBF9F00A8D25D /* STEERiskMgrForiOSApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 379023AD1F4FBF9F00A8D25D /* Build configuration list for PBXNativeTarget "STEERiskMgrForiOSApp" */;
+			buildPhases = (
+				3790239F1F4FBF9F00A8D25D /* Sources */,
+				379023A41F4FBF9F00A8D25D /* Frameworks */,
+				379023A71F4FBF9F00A8D25D /* Resources */,
+				379023AC1F4FBF9F00A8D25D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				379023B41F4FBFB800A8D25D /* PBXTargetDependency */,
+			);
+			name = STEERiskMgrForiOSApp;
+			productName = STEEForiOSApp;
+			productReference = 379023B01F4FBF9F00A8D25D /* STEERiskMgrForiOSApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		793C27FA215A1785002DA658 /* STEEForiOSAppFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 793C280E215A1785002DA658 /* Build configuration list for PBXNativeTarget "STEEForiOSAppFramework" */;
+			buildPhases = (
+				793C27FB215A1785002DA658 /* Sources */,
+				793C2800215A1785002DA658 /* Frameworks */,
+				793C2806215A1785002DA658 /* Resources */,
+				793C280C215A1785002DA658 /* Headers */,
+				793C2814215A194C002DA658 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STEEForiOSAppFramework;
+			productName = STEEForiOSApp;
+			productReference = 793C2811215A1785002DA658 /* STEEForiOSAppFramework.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7948D35B22325588009857DD /* STEEForiOSAppStaticFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7948D37122325588009857DD /* Build configuration list for PBXNativeTarget "STEEForiOSAppStaticFramework" */;
+			buildPhases = (
+				7948D36122325588009857DD /* Frameworks */,
+				7948D35C22325588009857DD /* Sources */,
+				7948D36722325588009857DD /* Resources */,
+				7948D36D22325588009857DD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STEEForiOSAppStaticFramework;
+			productName = STEEForiOSApp;
+			productReference = 7948D37422325588009857DD /* STEEForiOSAppStaticFramework.app */;
+			productType = "com.apple.product-type.application";
+		};
+		797FE91323223FCB00A0444E /* STEEForiOSAppStaticFrameworkTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797FE92A23223FCB00A0444E /* Build configuration list for PBXNativeTarget "STEEForiOSAppStaticFrameworkTest" */;
+			buildPhases = (
+				797FE91423223FCB00A0444E /* Frameworks */,
+				797FE91D23223FCB00A0444E /* Sources */,
+				797FE92223223FCB00A0444E /* Resources */,
+				797FE92823223FCB00A0444E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STEEForiOSAppStaticFrameworkTest;
+			productName = STEEForiOSApp;
+			productReference = 797FE92D23223FCB00A0444E /* STEEForiOSAppStaticFrameworkTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95C349661F05F67800E2690F /* STEEForiOSApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C3497E1F05F67800E2690F /* Build configuration list for PBXNativeTarget "STEEForiOSApp" */;
+			buildPhases = (
+				95C349631F05F67800E2690F /* Sources */,
+				95C349641F05F67800E2690F /* Frameworks */,
+				95C349651F05F67800E2690F /* Resources */,
+				95C39D7F1F08EBD700262EBA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STEEForiOSApp;
+			productName = STEEForiOSApp;
+			productReference = 95C349671F05F67800E2690F /* STEEForiOSApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95C3495F1F05F67800E2690F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "dingxiang-inc";
+				TargetAttributes = {
+					3790239C1F4FBF9F00A8D25D = {
+						DevelopmentTeam = QPXXB785LD;
+					};
+					793C27FA215A1785002DA658 = {
+						DevelopmentTeam = QPXXB785LD;
+					};
+					7948D35B22325588009857DD = {
+						DevelopmentTeam = QPXXB785LD;
+					};
+					797FE91323223FCB00A0444E = {
+						DevelopmentTeam = QPXXB785LD;
+					};
+					95C349661F05F67800E2690F = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = QPXXB785LD;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 95C349621F05F67800E2690F /* Build configuration list for PBXProject "STEEForiOSApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 95C3495E1F05F67800E2690F;
+			productRefGroup = 95C349681F05F67800E2690F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 95C3498E1F05F7A200E2690F /* Products */;
+					ProjectRef = 95C3498D1F05F7A200E2690F /* STEEForiOS.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				95C349661F05F67800E2690F /* STEEForiOSApp */,
+				3790239C1F4FBF9F00A8D25D /* STEERiskMgrForiOSApp */,
+				793C27FA215A1785002DA658 /* STEEForiOSAppFramework */,
+				7948D35B22325588009857DD /* STEEForiOSAppStaticFramework */,
+				797FE91323223FCB00A0444E /* STEEForiOSAppStaticFrameworkTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		374F3C171F1D9C7100B20748 /* libSTEERiskMgrForiOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSTEERiskMgrForiOS.a;
+			remoteRef = 374F3C161F1D9C7100B20748 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		37EB174A1F1DA5120056A851 /* libSTEERiskMgrForiOSWithIDFA.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSTEERiskMgrForiOSWithIDFA.a;
+			remoteRef = 37EB17491F1DA5120056A851 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A325DFD20917A2900091A17 /* DXRisk.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DXRisk.framework;
+			remoteRef = 4A325DFC20917A2900091A17 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A325DFF20917A2900091A17 /* DXRiskWithIDFA.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DXRiskWithIDFA.framework;
+			remoteRef = 4A325DFE20917A2900091A17 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7948D37C22325588009857DD /* DXRiskStatic.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DXRiskStatic.framework;
+			remoteRef = 7948D37B22325588009857DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7948D37E22325588009857DD /* DXRiskStaticWithIDFA.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DXRiskStaticWithIDFA.framework;
+			remoteRef = 7948D37D22325588009857DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		797FE93123223FCC00A0444E /* DXRiskStaticTest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DXRiskStaticTest.framework;
+			remoteRef = 797FE93023223FCC00A0444E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		379023A71F4FBF9F00A8D25D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A91C3871FD54F24009D36AD /* index.html in Resources */,
+				379023A81F4FBF9F00A8D25D /* stee_license.dx in Resources */,
+				379023A91F4FBF9F00A8D25D /* LaunchScreen.storyboard in Resources */,
+				379023AA1F4FBF9F00A8D25D /* Assets.xcassets in Resources */,
+				379023AB1F4FBF9F00A8D25D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793C2806215A1785002DA658 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793C2807215A1785002DA658 /* index.html in Resources */,
+				793C2808215A1785002DA658 /* stee_license.dx in Resources */,
+				793C2809215A1785002DA658 /* LaunchScreen.storyboard in Resources */,
+				793C280A215A1785002DA658 /* Assets.xcassets in Resources */,
+				793C280B215A1785002DA658 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7948D36722325588009857DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7948D36822325588009857DD /* index.html in Resources */,
+				7948D36922325588009857DD /* stee_license.dx in Resources */,
+				7948D36A22325588009857DD /* LaunchScreen.storyboard in Resources */,
+				7948D36B22325588009857DD /* Assets.xcassets in Resources */,
+				7948D36C22325588009857DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797FE92223223FCB00A0444E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797FE92323223FCB00A0444E /* index.html in Resources */,
+				797FE92423223FCB00A0444E /* stee_license.dx in Resources */,
+				7949BAA223224AF0001CE00B /* LaunchScreenTest.storyboard in Resources */,
+				797FE92623223FCB00A0444E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C349651F05F67800E2690F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794E48932338CF64001FD171 /* Main.storyboard in Resources */,
+				4A91C3861FD54F24009D36AD /* index.html in Resources */,
+				375C92301F29FA2C00B5B667 /* stee_license.dx in Resources */,
+				95C3497A1F05F67800E2690F /* LaunchScreen.storyboard in Resources */,
+				95C349771F05F67800E2690F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3790239F1F4FBF9F00A8D25D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379023A01F4FBF9F00A8D25D /* STEEForiOSDemo.mm in Sources */,
+				379023A11F4FBF9F00A8D25D /* ViewController.m in Sources */,
+				379023A21F4FBF9F00A8D25D /* AppDelegate.m in Sources */,
+				379023A31F4FBF9F00A8D25D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793C27FB215A1785002DA658 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793C27FC215A1785002DA658 /* STEEForiOSDemo.mm in Sources */,
+				793C27FD215A1785002DA658 /* ViewController.m in Sources */,
+				793C27FE215A1785002DA658 /* AppDelegate.m in Sources */,
+				793C27FF215A1785002DA658 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7948D35C22325588009857DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7948D35D22325588009857DD /* STEEForiOSDemo.mm in Sources */,
+				7948D35E22325588009857DD /* ViewController.m in Sources */,
+				7948D35F22325588009857DD /* AppDelegate.m in Sources */,
+				7948D36022325588009857DD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797FE91D23223FCB00A0444E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7949BA9D232244C4001CE00B /* main.m in Sources */,
+				7949BA9F232244C4001CE00B /* AppTestDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C349631F05F67800E2690F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CBCD97225C9F26008517FE /* Test.m in Sources */,
+				8452A9E3225DA43600E9E7B0 /* TestWebView.m in Sources */,
+				D67F8E7F1F0CFED400055AB5 /* STEEForiOSDemo.mm in Sources */,
+				95C349721F05F67800E2690F /* ViewController.m in Sources */,
+				95C3496F1F05F67800E2690F /* AppDelegate.m in Sources */,
+				95C3496C1F05F67800E2690F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		379023B41F4FBFB800A8D25D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = STEERiskMgrForiOS;
+			targetProxy = 379023B31F4FBFB800A8D25D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95C349731F05F67800E2690F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C349741F05F67800E2690F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95C349781F05F67800E2690F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C349791F05F67800E2690F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		379023AE1F4FBF9F00A8D25D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEVELOPMENT_TEAM = QPXXB785LD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STEEForiOSApp",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					ENABLE_RISKMGR,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+				INFOPLIST_FILE = STEEForiOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lz",
+					"-lresolv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dx.mobile.risk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+			};
+			name = Debug;
+		};
+		379023AF1F4FBF9F00A8D25D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEVELOPMENT_TEAM = QPXXB785LD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STEEForiOSApp",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					ENABLE_RISKMGR,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+				INFOPLIST_FILE = STEEForiOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lz",
+					"-lresolv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dx.mobile.risk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+			};
+			name = Release;
+		};
+		793C280F215A1785002DA658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEVELOPMENT_TEAM = QPXXB785LD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STEEForiOSApp",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					ENABLE_SAFE,
+					ENABLE_RISKMGR,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+				INFOPLIST_FILE = STEEForiOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lz",
+					"-lresolv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dx.mobile.risk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+			};
+			name = Debug;
+		};
+		793C2810215A1785002DA658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEVELOPMENT_TEAM = QPXXB785LD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STEEForiOSApp",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					ENABLE_SAFE,
+					ENABLE_RISKMGR,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+				INFOPLIST_FILE = STEEForiOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lz",
+					"-lresolv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dx.mobile.risk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+			};
+			name = Release;
+		};
+		7948D37222325588009857DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEVELOPMENT_TEAM = QPXXB785LD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STEEForiOSApp",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					ENABLE_SAFE,
+					ENABLE_RISKMGR,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+				INFOPLIST_FILE = STEEForiOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lz",
+					"-lresolv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dx.mobile.risk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+			};
+			name = Debug;
+		};
+		7948D37322325588009857DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEVELOPMENT_TEAM = QPXXB785LD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STEEForiOSApp",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					ENABLE_SAFE,
+					ENABLE_RISKMGR,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+				INFOPLIST_FILE = STEEForiOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lz",
+					"-lresolv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dx.mobile.risk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+			};
+			name = Release;
+		};
+		797FE92B23223FCB00A0444E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = QPXXB785LD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STEEForiOSApp",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					ENABLE_SAFE,
+					ENABLE_RISKMGR,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+				INFOPLIST_FILE = STEEForiOSApp/Info_test.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lz",
+					"-lresolv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dx.mobile.risk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+			};
+			name = Debug;
+		};
+		797FE92C23223FCB00A0444E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = QPXXB785LD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STEEForiOSApp",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					ENABLE_SAFE,
+					ENABLE_RISKMGR,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+				INFOPLIST_FILE = STEEForiOSApp/Info_test.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lz",
+					"-lresolv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dx.mobile.risk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+			};
+			name = Release;
+		};
+		95C3497C1F05F67800E2690F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95C3497D1F05F67800E2690F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95C3497F1F05F67800E2690F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_ENTITLEMENTS = STEEForiOSApp/STEEForiOSApp.entitlements;
+				DEVELOPMENT_TEAM = QPXXB785LD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STEEForiOSApp",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					ENABLE_SAFE,
+					ENABLE_RISKMGR,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+				INFOPLIST_FILE = STEEForiOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lz",
+					"-lresolv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dx.mobile.risk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
+			};
+			name = Debug;
+		};
+		95C349801F05F67800E2690F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_ENTITLEMENTS = STEEForiOSApp/STEEForiOSApp.entitlements;
+				DEVELOPMENT_TEAM = QPXXB785LD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STEEForiOSApp",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					ENABLE_SAFE,
+					ENABLE_RISKMGR,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+				INFOPLIST_FILE = STEEForiOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lz",
+					"-lresolv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dx.mobile.risk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/STEEForiOSApp/";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		379023AD1F4FBF9F00A8D25D /* Build configuration list for PBXNativeTarget "STEERiskMgrForiOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379023AE1F4FBF9F00A8D25D /* Debug */,
+				379023AF1F4FBF9F00A8D25D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		793C280E215A1785002DA658 /* Build configuration list for PBXNativeTarget "STEEForiOSAppFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793C280F215A1785002DA658 /* Debug */,
+				793C2810215A1785002DA658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7948D37122325588009857DD /* Build configuration list for PBXNativeTarget "STEEForiOSAppStaticFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7948D37222325588009857DD /* Debug */,
+				7948D37322325588009857DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		797FE92A23223FCB00A0444E /* Build configuration list for PBXNativeTarget "STEEForiOSAppStaticFrameworkTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797FE92B23223FCB00A0444E /* Debug */,
+				797FE92C23223FCB00A0444E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		95C349621F05F67800E2690F /* Build configuration list for PBXProject "STEEForiOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C3497C1F05F67800E2690F /* Debug */,
+				95C3497D1F05F67800E2690F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		95C3497E1F05F67800E2690F /* Build configuration list for PBXNativeTarget "STEEForiOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C3497F1F05F67800E2690F /* Debug */,
+				95C349801F05F67800E2690F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95C3495F1F05F67800E2690F /* Project object */;
+}

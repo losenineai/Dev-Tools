@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5C238C7F77FC305D867038590031ED466D7C104A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8CFE369F6921B81AC3FDF03B233137CCF209996D" : 9223372036854775807,
+    "5C238C7F77FC305D867038590031ED466D7C104A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5A35073A-5D16-440E-9F4C-C4DCE2F6A1BB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8CFE369F6921B81AC3FDF03B233137CCF209996D" : "stee-client-android-sdk\/xcode_proj\/STEEForiOS\/AntiModel\/",
+    "5C238C7F77FC305D867038590031ED466D7C104A" : "stee-client-android-sdk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "STEEForiOSApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "xcode_proj\/STEEForiOSApp\/STEEForiOSApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/dev.dingxiang-inc.com:8022\/stee\/stee-client-android-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5C238C7F77FC305D867038590031ED466D7C104A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/dev.dingxiang-inc.com:8022\/sdk\/dx-anti-module-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8CFE369F6921B81AC3FDF03B233137CCF209996D"
+    }
+  ]
+}
