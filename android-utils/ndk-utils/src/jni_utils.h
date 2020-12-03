@@ -3,6 +3,9 @@
 //
 
 
+#ifndef JNI_UTILS_H
+#define JNI_UTILS_H
+
 #include <jni.h>
 #include <string>
 #include "log.h"
@@ -237,16 +240,18 @@ public:
     jobjectArray StrArray2objectArray(string strArray[], int len);
 
 
-    static void Init(JavaVM* jvm, const char *classname) {
+    static void Init(JavaVM* jvm, const char *classname = NULL) {
         g_jvm = jvm;
 
         JniUtils jni;
-        jclass patchClass = jni.FindClassByName(classname);
-        jobject jo_classLoader = jni.CallObjectMethod(patchClass, "getClassLoader", "()Ljava/lang/ClassLoader;");
-        g_classLoader = jni.NewGlobalRef(jo_classLoader);
-        jni.DeleteRef(patchClass);
-        jni.DeleteRef(jo_classLoader);
-        LOGD("g_classLoader :%p", g_classLoader);
+        if (classname) {
+            jclass patchClass = jni.FindClassByName(classname);
+            jobject jo_classLoader = jni.CallObjectMethod(patchClass, "getClassLoader", "()Ljava/lang/ClassLoader;");
+            g_classLoader = jni.NewGlobalRef(jo_classLoader);
+            jni.DeleteRef(patchClass);
+            jni.DeleteRef(jo_classLoader);
+            LOGD("g_classLoader :%p", g_classLoader);
+        }
     }
 
     JniUtils() : m_env(NULL),
@@ -282,3 +287,6 @@ private:
 
    
 };
+
+
+#endif // JNI_UTILS_H
