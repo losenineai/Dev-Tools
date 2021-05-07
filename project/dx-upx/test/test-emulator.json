@@ -1,0 +1,11 @@
+[
+    {
+        "test_name": "yeshen-emulator-test",
+        "test_id": "1001428",
+        "input_apk": [
+            "test/test_apks_all/mac_aikucun-2.6.8.apk",
+            "test/test_apks_all/linux_aikucun-2.6.8.apk"
+        ], 
+        "test_func": "tests.runtest:test_run_wait"
+    }
+]

@@ -1,0 +1,42 @@
+{
+	"title":"so保护报告",
+	"vendor":"顶像技术",
+	"taskinfo":"任务信息",
+	"task1":"防静态分析",
+	"task2":"防文件篡改",
+	"task3":"防动态攻击",
+	"task4":"防调试攻击",
+	"baseinfo":"基本信息",
+	"protectInfo":"加固说明",
+	"protectRecord":"保护记录",
+	"checkTool":"检查工具",
+	"tool1":"[010editor](https://www.sweetscape.com/download/010editor/)",
+	"tool2":"[7z](https://www.7-zip.org/)",
+	"tool3":"[ida](https://www.hex-rays.com/products/ida/support/download_freeware.shtml)",
+	"checkTitle":"检查过程",
+	"checkProcess":"按下列步骤进行验证：",
+	"task1_step1":"使用zip压缩工具对压缩包做解压。",
+	"task1_step2":"提取解压包中so文件。",
+	"task1_step3":"把步骤2中提取的so文件拖入[IDA试用版](https://www.hex-rays.com/products/ida/support/download_freeware.shtml)工具中。",
+	"task1_step4":"如[IDA试用版](https://www.hex-rays.com/products/ida/support/download_freeware.shtml)不断弹出如下图的错误提示框，则功能生效。",
+	
+	"task2_step1":"使用zip压缩工具对压缩包做解压。",
+	"task2_step2":"提取解压包中so文件。",
+	"task2_step3":"把步骤2中提取so文件拖入[010editor试用版](https://www.sweetscape.com/download/010editor/)工具中，对末无用尾字节做修改，并将修改后so重新压缩回apk文件中，重新签名。",
+	"task2_step4":"运行apk，在apk加载so时，会出现崩溃现象。",
+
+	"task3_step1":"将加固后so文件做加载运行。",
+	"task3_step2":"将加载后的so文件使用内存dump，将其dump到sd卡中。",
+	"task3_step3":"将dump出来的so拖拉到[IDA试用版](https://www.hex-rays.com/products/ida/support/download_freeware.shtml)工具中。",
+	"task3_step4":"观察其文件结构，ELF头以及Program头的部分信息已经被清除掉无法恢复。如下图所示",
+	
+	"task4_step1":"使用zip压缩工具对压缩包做解压。",
+	"task4_step2":"提取解压包中so文件。",
+	"task4_step3":"把步骤2中提取的so文件拖入ida[IDA试用版](https://www.hex-rays.com/products/ida/support/download_freeware.shtml)进行动态调试。",
+	"task4_step4":"在so被加载时，出现进程崩溃现象。",
+	"protect_fail1":"（由于该so链接了部分与stdc++/stl库相关内容，考虑到兼容性问题，对该so不做保护）",
+	"protect_fail2":"（由于so压缩率过低，没有足够的空间存放解壳代码，而导致加壳失败，只能对该so做简单防ida保护。可以尝试在so的代码的任意一个源文件中添加：`extern \"C\" void stub(){asm (\"\t.space 8192\n\");}`，再将重新编译后的so上传做加固保护。）",
+	"protect_fail3":"（可能由于so文件格式错误，或者文件路径错误等原因，导致加壳失败）",
+	"upx_fail":"由于兼容性问题，只能够做简单防静态分析"，
+}
+

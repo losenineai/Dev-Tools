@@ -1,0 +1,51 @@
+[
+    {
+        "test_name": "mprotect-fail-test",
+        "test_id": "1001263",
+        "machines": "samsung_SM_G530H",
+        "input_apk": [
+            "test_apks_all/mac_snjr-6.6.2-release.apk",
+            "test_apks_all/linux_snjr-6.6.2-release.apk"
+        ], 
+        "test_func": "tests.runtest:test_run_wait"
+    }, 
+    {
+        "test_name": "block-copy-accuracy-test",
+        "test_id": "1001260",
+        "input_apk": [
+            "test_apks_all/mac_yunmanman.apk",
+            "test_apks_all/linux_yunmanman.apk"
+        ], 
+        "exclude_machines":"Xiaomi_Redmi_5_Plus,Meizu_PRO_5",
+        "test_func": "tests.runtest:test_run_wait"
+    },
+    {
+        "test_name": "upx-decode-check",
+        "test_id": "1001155",
+        "input_apk": [
+            "test_apks_all/mac_upx-test.apk",
+            "test_apks_all/linux_upx-test.apk"
+        ], 
+        "test_func": "tests.runtest:test_run_wait"
+    },
+    {
+        "test_name": "arm64-instruction-refresh",
+        "test_id": "1001259",
+        "input_apk": [
+            "test_apks_all/mac_zhihuribao_795.apk",
+            "test_apks_all/linux_zhihuribao_795.apk"
+        ], 
+        "machines": "Meizu_PRO_5", 
+        "test_func": "tests.runtest:test_run_wait"
+    },
+    {
+        "test_name": "section-headers-test",
+        "test_id": "1001261",
+        "input_apk": [
+            "test_apks_all/mac_zhihuribao_795.apk",
+            "test_apks_all/linux_zhihuribao_795.apk"
+        ], 
+        "machines": "Lenovo_Lenovo", 
+        "test_func": "tests.runtest:test_run_wait"
+    }
+]

@@ -1,0 +1,2 @@
+build for linux: make
+build for minw32: make target=cross-mingw32

@@ -1,0 +1,8 @@
+[
+    {
+        "test_name": "run-all-test",
+        "test_id": "1001153",
+        "input_apk_dir": "test_apks_all/",
+        "test_func": "tests.runtest:test_run_wait"
+    }
+]
