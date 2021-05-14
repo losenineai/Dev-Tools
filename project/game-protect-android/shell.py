@@ -43,6 +43,7 @@ def update_symbol(soname, sym_name, value):
     elf.write(soname)
 
 def update_rel(soname, sym_name, offset):
+    print("update_rel offset:", hex(offset))
     elf = lief.parse(soname)
     relocation = elf.get_relocation(sym_name)
     relocation.address = offset
@@ -173,7 +174,6 @@ def add_symbol(target_so, inject_so, out):
         本来针对原节拓展即可，但lief工具新增了3个load段进行加载新的内容，所以还修改了dynamic
     """
     add_sym_value_list = list()
-    add_rel_addr_list = list()
     for add_entry in addbin_relplt:
         if target_elf.has_symbol(add_entry.symbol.name):
             # print("add_symbol inject plt symbol name:", add_entry.symbol.name)
@@ -191,7 +191,6 @@ def add_symbol(target_so, inject_so, out):
             add_reloc = ELF.Relocation()
             add_reloc.type = add_entry.type
             add_reloc.symbol = sym
-            # add_reloc.address = add_entry.address - add_got.virtual_address # 后面修复
             add_reloc.address = add_entry.address - add_got.virtual_address # 后面修复
             add_reloc.purpose = ELF.RELOCATION_PURPOSES.PLTGOT
             add_reloc = target_elf.add_pltgot_relocation(add_reloc)
@@ -246,13 +245,14 @@ def add_symbol(target_so, inject_so, out):
             print("new entry.sym_value:", hex(entry.sym_value))
         inx += 1
         modify_dynsym_content += entry.content
-    patch_file(out, inter.get_section(".dynsym").offset + add_dynsym_start, modify_dynsym_content)
+    # patch_file(out, inter.get_section(".dynsym").offset + add_dynsym_start, modify_dynsym_content)
 
     # 修复.rel.plt中新增的rel项，指向新增的第二个load段中加载的add.so中的got表
     modify_rel_content = []
     relplt = inter.get_section(".rel.plt")
     add_rel_start = inter.get_section(".rel.plt").size - len(add_sym_value_list) * 8
     print("add_symbol add_rel_start:", hex(add_rel_start))
+
 
     add_entry_ndx = 0
     for rel_content in [relplt.content[i:i + 8] for i in range(add_rel_start, len(relplt.content), 8)]:
@@ -266,18 +266,19 @@ def add_symbol(target_so, inject_so, out):
             print("new rel.offset:", hex(relEntry.offset))
         modify_rel_content += relEntry.content
         add_entry_ndx += 1
-    patch_file(out, inter.get_section(".rel.plt").offset + add_rel_start, modify_rel_content)
 
-    # inject_elf.get_relocation
+    print_rel(out, "inject_code")
+    # patch_file(out, inter.get_section(".rel.plt").offset + add_rel_start, modify_rel_content)
 
+
+    print("after update")
     print_symbol(out, "inject_code")
     print_rel(out, "inject_code")
-    print("after update")
 
 
 
 
-    # # 需要fix plt 表,调用外部函数时需要 通过plt表进行跳转
+    # 需要fix plt 表,调用外部函数时需要 通过plt表进行跳转
     # add_plt_size = add_plt.size
     # print("add_plt_size:", add_plt_size)
     # PLT_TABLE_HEAD_LEN = 0x14
@@ -285,25 +286,28 @@ def add_symbol(target_so, inject_so, out):
     # # print(need_fix_plt_content)
     # # print(hex(add_RW_seg_virtual_address - add_RE_seg_virtual_address))
     #
-    # # TODO
-    # fix_elf = lief.parse(out)
-    # rel_list = fix_elf.pltgot_relocations
-    # print("rel_list len:", len(rel_list))
-    # for rel in rel_list:
-    #     add_rel_addr_list.append(rel.address)
-    #     print("inject rel:", rel)
-    # got = inject_elf.get_section(".got")
-    # print("got_list len:", got.size)
+    # got_address_list = []
+    # add_got_size = add_got.size
+    # print("add_got size:", add_got.size)
+    # index = 0
+    # for got_entry in [add_RW_seg.content[i:i + 4] for i in range(0, add_got_size, 4)]:
+    #     print("got_entry:i", got_entry)
+    #     value = int(got_entry[0]) + (int(got_entry[1]) << 8) + (int(got_entry[2]) << 16) + (int(got_entry[3]) << 24)
+    #     print("value:", hex(value))
+    #
+    #     got_address_list.append(add_RW_seg_virtual_address + index * 4)
+    #     index += 1
+    # print("got_address_list len:", len(got_address_list))
     #
     #
     # inx = 0
     # modify_plt_content = []
     # for plt_entry in [add_RE_seg.content[i:i + 12] for i in range(PLT_TABLE_HEAD_LEN, add_plt_size, 12)]:
     #     print("plt_entry[{0}]: {1}".format(inx, plt_entry))
+    #     inx += 1
     #
     #     # +8是因为ADR取地址是取PC的值
-    #     got2plt_offset = add_rel_addr_list[inx] - (inx * 12 + add_RE_seg_virtual_address + 8 + PLT_TABLE_HEAD_LEN)
-    #     inx += 1
+    #     got2plt_offset = got_address_list[inx] - (inx * 12 + add_RE_seg_virtual_address + 8 + PLT_TABLE_HEAD_LEN)
     #     print("got -> plt offset :", hex(got2plt_offset))
     #     print(plt_entry)
     #     h, m, l = get_offset(got2plt_offset)
